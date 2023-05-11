@@ -47,5 +47,5 @@ streamlit.text("The fruit_load_list contains:")
 streamlit.dataframe(my_data_row)
 
 add_fruit = streamlit.text_input('What fruit would you like to add?', 'Kiwi')
-my_cur.execute('INSERT INTO fruit_load_list VALUES ("from streamlit")')
+my_cur.execute("INSERT INTO fruit_load_list VALUES ('from streamlit')")   # Modified test query to avoid error
 streamlit.write('Thanks for adding', add_fruit)
